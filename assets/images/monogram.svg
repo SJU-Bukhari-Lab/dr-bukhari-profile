@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">SACB monogram</title>
+  <desc id="desc">A geometric monogram for Syed Ahmad Chan Bukhari</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f4c95d"/>
+      <stop offset="1" stop-color="#d99f1d"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#0b2a4a"/>
+  <path d="M24 31h72M24 89h72M33 22v76M87 22v76" stroke="url(#g)" stroke-width="5" opacity=".42"/>
+  <path d="M78 34c-5-5-12-7-19-7-12 0-21 6-21 15 0 21 42 8 42 31 0 11-10 19-25 19-9 0-18-3-24-9" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="91" cy="29" r="6" fill="#f4c95d"/>
+</svg>

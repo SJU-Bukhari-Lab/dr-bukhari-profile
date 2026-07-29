@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#6d1231"/>
+      <stop offset="1" stop-color="#1d2430"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#f4c95d" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#f4c95d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="560" rx="42" fill="url(#bg)"/>
+  <circle cx="690" cy="120" r="240" fill="url(#glow)"/>
+  <g fill="none" stroke="#f4c95d" stroke-opacity=".34" stroke-width="2">
+    <path d="M80 450L225 350 355 405 480 280 620 330 790 190"/>
+    <path d="M120 160L250 235 370 155 520 220 690 120 820 265"/>
+    <path d="M225 350L250 235M355 405L370 155M480 280L520 220M620 330L690 120"/>
+    <path d="M80 450L120 160M790 190L820 265"/>
+  </g>
+  <g fill="#fff" stroke="#f4c95d" stroke-width="4">
+    <circle cx="80" cy="450" r="9"/><circle cx="225" cy="350" r="13"/><circle cx="355" cy="405" r="8"/>
+    <circle cx="480" cy="280" r="16"/><circle cx="620" cy="330" r="10"/><circle cx="790" cy="190" r="14"/>
+    <circle cx="120" cy="160" r="9"/><circle cx="250" cy="235" r="12"/><circle cx="370" cy="155" r="8"/>
+    <circle cx="520" cy="220" r="12"/><circle cx="690" cy="120" r="18"/><circle cx="820" cy="265" r="9"/>
+  </g>
+  <g fill="#f8f5ee" opacity=".88" font-family="system-ui, sans-serif" font-size="21" font-weight="600">
+    <text x="420" y="245">evidence</text>
+    <text x="645" y="95">trust</text>
+    <text x="185" y="325">people</text>
+    <text x="695" y="365">impact</text>
+  </g>
+</svg>

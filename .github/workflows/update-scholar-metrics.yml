@@ -1,30 +1,40 @@
 name: Update Scholar metrics
+
 on:
   workflow_dispatch:
   schedule:
     - cron: "17 8 1 * *"
+
 permissions:
   contents: write
+  pull-requests: write
+
+concurrency:
+  group: scholar-metrics
+  cancel-in-progress: true
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Refresh metrics
+      - name: Refresh and validate metrics
         env:
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: python scripts/update_scholar_metrics.py
-      - name: Commit changed metrics
-        run: |
-          if git diff --quiet -- assets/data/scholar-metrics.json; then
-            echo "No metric changes."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/data/scholar-metrics.json
-          git commit -m "Update Google Scholar metrics"
-          git push
+      - name: Open a reviewable metrics pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/scholar-metrics
+          delete-branch: true
+          commit-message: Update Google Scholar metrics
+          title: Update Google Scholar metrics
+          body: |
+            Automated monthly refresh of the public Google Scholar metrics.
+
+            The update passed the repository's plausibility checks. Please review the values and `updated_at` date before merging.
+          add-paths: assets/data/scholar-metrics.json

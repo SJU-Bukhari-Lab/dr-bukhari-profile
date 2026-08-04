@@ -1,8 +1,27 @@
 # Dr. Bukhari Professional Portfolio
 
-A static GitHub Pages portfolio for Syed Ahmad Chan Bukhari, PhD. The site preserves the original navy-and-gold visual system while organizing the public profile around research, talks and events, media coverage, and scholarly engagement.
+A dependency-free, GitHub Pages portfolio for Syed Ahmad Chan Bukhari, PhD. The site presents a current academic profile through trustworthy AI and biomedical informatics research, talks and events, media coverage, professional recognition, and clear scholarly contact channels.
 
-## Preview locally
+## Public information architecture
+
+Primary navigation:
+
+`Home | Research | Talks and Events | Media Coverage | Connect`
+
+The fuller academic profile remains available through the link beneath the homepage portrait. Legacy `scholarship.html` and `resources.html` routes redirect to their current destinations and are marked `noindex`.
+
+## Design and interaction
+
+- Responsive navy, cream, and gold editorial design with light and dark modes
+- Accessible sticky navigation and mobile menu behavior
+- Native multipage navigation enhanced with cross-document View Transitions
+- Searchable and URL-shareable talks and media archives
+- Native disclosure components for project details and recognition summaries
+- Keyboard-accessible event gallery with previous and next controls
+- Open Graph, Twitter card, canonical, and structured-data metadata
+- Reduced-motion support and intrinsic image dimensions to limit layout movement
+
+## Local preview
 
 ```bash
 python3 -m http.server 8000
@@ -10,32 +29,47 @@ python3 -m http.server 8000
 
 Open `http://localhost:8000`.
 
-## Event photographs
+## Content maintenance
 
-The homepage gallery is fully styled and currently uses three abstract placeholders:
+The committed HTML remains readable by search engines and visitors without JavaScript. Curated archive records are maintained in:
 
-- `assets/images/event-conference.svg`
-- `assets/images/event-talk.svg`
-- `assets/images/event-workshop.svg`
+- `assets/data/events.json`
+- `assets/data/media-coverage.json`
 
-Replace these files with optimized `.webp` photographs from the shared Drive folder and update the corresponding paths in `index.html`, or preserve the filenames by exporting the photos under matching names.
+After editing either file, regenerate the corresponding HTML cards:
 
-Recommended image preparation: 1600px wide, WebP, under 350 KB where practical, meaningful alt text, and written permission for any prominently featured attendees.
+```bash
+python3 scripts/build_content.py
+```
+
+Then run the repository checks:
+
+```bash
+python3 scripts/validate_site.py
+```
+
+Time-sensitive research and recognition copy should include an official source and a visible review date. Use institutional announcements, publisher directories, ORCID, and Google Scholar as the primary public references. Do not publish proposals that remain under review, private contact information, internal planning notes, or unverified titles and affiliations.
+
+## Images
+
+Original WebP photographs are stored in `assets/images/`. Responsive `-480.webp` and `-960.webp` variants are committed for faster mobile delivery. To regenerate them after replacing a photograph, install Pillow and run:
+
+```bash
+python3 scripts/generate_responsive_images.py
+```
+
+Keep meaningful alt text, preserve the original aspect ratio, and confirm permission for prominently featured attendees. Hero imagery should remain eager-loaded; below-the-fold photographs should remain lazy-loaded. `social-card.webp` supplies the 1200×630 sharing preview, while `profile-square.webp` supplies the structured-data profile image.
 
 ## Google Scholar metrics
 
-The browser loads public values from `assets/data/scholar-metrics.json`; no API key is exposed in client-side JavaScript. A monthly GitHub Actions workflow is included in `.github/workflows/update-scholar-metrics.yml`.
+The homepage reads public fallback values from `assets/data/scholar-metrics.json`. No credential is exposed in the browser.
 
-To enable automated refreshes, add a repository Actions secret named `SERPAPI_KEY`. Without the secret, the workflow exits safely and retains the repository-managed values. Google Scholar remains the source of record.
+A monthly workflow in `.github/workflows/update-scholar-metrics.yml` can refresh the metrics through SerpApi. Add the repository Actions secret `SERPAPI_KEY` to enable it. The script validates citation, h-index, i10-index, and indexed-work counts before writing the file. When values change, the workflow opens a pull request instead of pushing directly to `main`.
 
-## Custom domain
+Scheduled workflows run from the repository's default branch, so the automation begins after this work is merged into `main`.
 
-`CNAME` is configured for `drahmadcbukhari.com`. In the DNS provider, point the apex domain to GitHub Pages and configure `www` as a CNAME to `sju-bukhari-lab.github.io`. Then enter `drahmadcbukhari.com` under **Repository Settings → Pages → Custom domain** and enable HTTPS after DNS verification.
+## Custom domain and deployment
 
-## Navigation
+`CNAME` is configured for `drahmadcbukhari.com`. GitHub Pages should deploy the static root and enforce HTTPS after DNS verification.
 
-Primary navigation:
-
-`Home | Research | Talks and Events | Media Coverage | Connect`
-
-The academic profile remains available through the link beneath the homepage portrait, but it is intentionally excluded from the top menu.
+The site is intentionally dependency-free at runtime. CSS and JavaScript files use version query strings to prevent stale browser caches after deployment.

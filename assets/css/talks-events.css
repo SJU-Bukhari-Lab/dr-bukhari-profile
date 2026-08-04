@@ -88,7 +88,7 @@
   min-height: 540px;
   margin: 0;
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--wine) 18%, var(--line));
+  border: 1px solid color-mix(in srgb, var(--brand-navy) 18%, var(--line));
   border-radius: 36px;
   background: var(--surface);
   box-shadow: 0 35px 80px rgba(11, 42, 74, .18);
@@ -165,7 +165,7 @@
   position: relative;
   min-height: 510px;
   overflow: hidden;
-  background: var(--wine-deep);
+  background: var(--brand-navy-deep);
 }
 
 .talks-featured-image img {
@@ -305,7 +305,7 @@
 }
 
 .talks-filter-buttons button[aria-pressed="true"] {
-  background: var(--wine);
+  background: var(--brand-navy);
   color: white;
   box-shadow: 0 10px 22px rgba(11, 42, 74, .18);
 }
@@ -404,8 +404,8 @@
   display: grid;
   place-items: center;
   border-radius: 17px;
-  background: color-mix(in srgb, var(--wine) 8%, var(--surface-2));
-  color: var(--wine);
+  background: color-mix(in srgb, var(--brand-navy) 8%, var(--surface-2));
+  color: var(--brand-navy);
 }
 
 .talks-event-icon svg {
@@ -426,7 +426,7 @@
 }
 
 .talks-event-type {
-  color: var(--wine-soft);
+  color: var(--brand-blue);
   font-size: .72rem;
   font-weight: 950;
   letter-spacing: .1em;
@@ -465,7 +465,7 @@
   gap: 16px;
   padding-top: 15px;
   border-top: 1px solid var(--line);
-  color: var(--wine);
+  color: var(--brand-navy);
   cursor: pointer;
   list-style: none;
   font-size: .84rem;
@@ -493,7 +493,7 @@
 }
 
 .talks-event-card details a {
-  color: var(--wine);
+  color: var(--brand-navy);
   font-weight: 850;
   text-decoration-thickness: 1px;
   text-underline-offset: 4px;
@@ -529,7 +529,7 @@
   top: calc(var(--header-h) + 28px);
   padding: 34px;
   border-radius: 26px;
-  background: linear-gradient(150deg, var(--wine-deep), var(--wine));
+  background: linear-gradient(150deg, var(--brand-navy-deep), var(--brand-navy));
   color: white;
   box-shadow: 0 28px 60px rgba(11, 42, 74, .2);
 }
@@ -556,7 +556,7 @@
 .talks-seminar-intro .button-secondary {
   margin-top: 12px;
   background: white;
-  color: var(--wine-deep);
+  color: var(--brand-navy-deep);
 }
 
 .talks-seminar-list {
@@ -608,14 +608,14 @@
   place-items: center;
   border: 1px solid var(--line);
   border-radius: 50%;
-  color: var(--wine);
+  color: var(--brand-navy);
   font-size: 1.15rem;
   font-weight: 900;
 }
 
 .talks-seminar-list details[open] summary > span:last-child {
   transform: rotate(45deg);
-  background: var(--wine);
+  background: var(--brand-navy);
   color: white;
 }
 
@@ -681,13 +681,13 @@
 
 .talks-slide-card .article-kicker {
   margin-top: 25px;
-  color: var(--wine-soft);
+  color: var(--brand-blue);
 }
 
 .talks-slide-link {
   margin-top: auto;
   padding-top: 26px;
-  color: var(--wine);
+  color: var(--brand-navy);
   font-size: .84rem;
   font-weight: 900;
 }
@@ -804,7 +804,7 @@
   gap: 40px;
   padding: clamp(34px, 5vw, 58px);
   border-radius: 30px;
-  background: linear-gradient(135deg, var(--wine-deep), var(--wine));
+  background: linear-gradient(135deg, var(--brand-navy-deep), var(--brand-navy));
   color: white;
   box-shadow: 0 30px 70px rgba(11, 42, 74, .22);
 }

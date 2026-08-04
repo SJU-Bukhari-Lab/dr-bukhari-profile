@@ -1,0 +1,122 @@
+{
+  "updated_at": "2026-08-03",
+  "items": [
+    {
+      "id": "st-johns-ai-lab-awarded-grant-to-study-drug-repurposing",
+      "date": "2026-07-27",
+      "year": "2026",
+      "category": "funding",
+      "icon": "✦",
+      "kicker": "Research funding · St. John’s University",
+      "title": "St. John’s AI Lab Awarded Grant to Study Drug Repurposing",
+      "summary": "Coverage of the NIH-supported RESPOND initiative, which connects machine learning with biomedical evidence for respiratory-disorder drug repurposing.",
+      "source_url": "https://www.stjohns.edu/news-media/news/2026-07-27/st-johns-ai-lab-awarded-grant-study-drug-repurposing",
+      "source_label": "Read story",
+      "search": "2026 NIH RESPOND drug repurposing respiratory disorders neuro-symbolic AI St Johns University"
+    },
+    {
+      "id": "professor-awarded-grant-to-study-use-of-ai-in-medical-coding",
+      "date": "2024-09-17",
+      "year": "2024",
+      "category": "funding",
+      "icon": "⌁",
+      "kicker": "Research funding · St. John’s University",
+      "title": "Professor Awarded Grant to Study Use of AI in Medical Coding",
+      "summary": "A $550,000 NSF award supports an AI system designed to help interpret clinical notes and improve the efficiency and accuracy of medical coding.",
+      "source_url": "https://www.stjohns.edu/news-media/news/2024-09-17/st-johns-professor-awarded-grant-study-use-ai-medical-coding",
+      "source_label": "Read story",
+      "search": "2024 NSF artificial intelligence medical coding healthcare billing doctor notes St Johns University"
+    },
+    {
+      "id": "ccps-panel-focuses-on-health-care-digitalization-and-innovation",
+      "date": "2024-12-10",
+      "year": "2024",
+      "category": "highlight",
+      "icon": "◫",
+      "kicker": "Event highlight · St. John’s University",
+      "title": "CCPS Panel Focuses on Health-Care Digitalization and Innovation",
+      "summary": "A panel at the Manhattan campus brought academic and industry perspectives to the opportunities and challenges shaping digital health care.",
+      "source_url": "https://www.stjohns.edu/news-media/news/2024-12-10/ccps-panel-focuses-health-care-digitalization-and-innovation",
+      "source_label": "Read story",
+      "search": "2024 future is now AI digitalization healthcare innovation panel HIMSS St Johns Manhattan"
+    },
+    {
+      "id": "professor-named-a-top-researcher-in-artificial-intelligence-worldwide",
+      "date": "2023-11-27",
+      "year": "2023",
+      "category": "recognition",
+      "icon": "★",
+      "kicker": "Recognition · St. John’s University",
+      "title": "Professor Named a Top Researcher in Artificial Intelligence Worldwide",
+      "summary": "Institutional coverage of his recognition among the top two percent of researchers globally in artificial intelligence.",
+      "source_url": "https://www.stjohns.edu/news-media/news/2023-11-27/professor-named-top-researcher-artificial-intelligence-worldwide",
+      "source_label": "Read story",
+      "search": "2023 top two percent researchers artificial intelligence Stanford global recognition St Johns University"
+    },
+    {
+      "id": "dr-bukhari-on-the-increased-use-of-ai-in-health-care",
+      "date": "2023-08-08",
+      "year": "2023",
+      "category": "interview",
+      "icon": "“",
+      "kicker": "In the media · Newsday / St. John’s University",
+      "title": "Dr. Bukhari on the Increased Use of AI in Health Care",
+      "summary": "A university media entry directing readers to his Newsday guest commentary on artificial intelligence in health care.",
+      "source_url": "https://www.stjohns.edu/news-media/st-johns-media/dr-syed-ahmad-chan-bukhari-increased-use-ai-health-care",
+      "source_label": "View media entry",
+      "search": "2023 Newsday increased use artificial intelligence health care interview commentary St Johns"
+    },
+    {
+      "id": "ccps-assistant-professor-receives-nsf-grant",
+      "date": "2023-07-10",
+      "year": "2023",
+      "category": "funding",
+      "icon": "◇",
+      "kicker": "Research funding · St. John’s University",
+      "title": "CCPS Assistant Professor Receives NSF Grant",
+      "summary": "The NSF I-Corps project explored trustworthy medical-code recommendations using deep learning and knowledge graphs.",
+      "source_url": "https://www.stjohns.edu/news-media/news/2023-07-10/ccps-assistant-professor-receives-nsf-grant",
+      "source_label": "Read story",
+      "search": "2023 NSF I-Corps trustworthy medical code recommendations deep learning knowledge graphs St Johns"
+    },
+    {
+      "id": "innovative-methods-to-improve-clinical-decision-support-systems-at-biostec",
+      "date": "2023-03-24",
+      "year": "2023",
+      "category": "highlight",
+      "icon": "◎",
+      "kicker": "Research highlight · St. John’s University",
+      "title": "Innovative Methods to Improve Clinical Decision Support Systems at BIOSTEC",
+      "summary": "Three papers and a poster presented work in health-care NLP, hospital-readmission prediction, explainability, and trustworthy code recommendations.",
+      "source_url": "https://www.stjohns.edu/news-media/announcements/st-johns-university-presents-innovative-methods-improve-clinical-decision-support-systems-biostec",
+      "source_label": "Read highlight",
+      "search": "2023 BIOSTEC Lisbon clinical decision support explainability healthcare NLP medical coding knowledge graph"
+    },
+    {
+      "id": "faculty-members-nsf-grant-to-enhance-biomedical-content-search",
+      "date": "2021-06-17",
+      "year": "2021",
+      "category": "funding",
+      "icon": "⌕",
+      "kicker": "Research funding · St. John’s University",
+      "title": "Faculty Member’s NSF Grant to Enhance Biomedical Content Search",
+      "summary": "A two-year, $175,000 NSF grant supported socio-technical methods for making biomedical content easier to author, structure, find, and reuse.",
+      "source_url": "https://www.stjohns.edu/news-media/news/2021-06-17/faculty-members-nsf-grant-enhance-biomedical-content-search",
+      "source_label": "Read story",
+      "search": "2021 NSF biomedical content search semantic authoring structured publishing St Johns University"
+    },
+    {
+      "id": "healthcare-informatics-professor-earns-ieee-award-for-innovation",
+      "date": "2019-11-12",
+      "year": "2019",
+      "category": "recognition",
+      "icon": "△",
+      "kicker": "Recognition · St. John’s University",
+      "title": "Healthcare Informatics Professor Earns IEEE Award for Innovation",
+      "summary": "The IEEE Technological Innovation Award recognized significant advances in the standardization and processing of biomedical data.",
+      "source_url": "https://www.stjohns.edu/news-media/news/2019-11-12/healthcare-informatics-professor-earns-ieee-award-innovation",
+      "source_label": "Read story",
+      "search": "2019 IEEE technological innovation award biomedical data standardization healthcare informatics St Johns"
+    }
+  ]
+}

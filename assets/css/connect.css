@@ -228,7 +228,7 @@
   padding: 34px;
   background:
     radial-gradient(circle at 92% 12%, rgba(244, 201, 93, .26), transparent 28%),
-    linear-gradient(145deg, var(--wine), var(--wine-deep));
+    linear-gradient(145deg, var(--brand-navy), var(--brand-navy-deep));
   color: white;
 }
 
@@ -356,10 +356,10 @@
   display: grid;
   place-items: center;
   margin-top: 26px;
-  border: 1px solid color-mix(in srgb, var(--wine) 18%, var(--line));
+  border: 1px solid color-mix(in srgb, var(--brand-navy) 18%, var(--line));
   border-radius: 18px;
-  background: color-mix(in srgb, var(--wine) 8%, var(--surface));
-  color: var(--wine);
+  background: color-mix(in srgb, var(--brand-navy) 8%, var(--surface));
+  color: var(--brand-navy);
 }
 
 .connect-card-icon svg {
@@ -399,7 +399,7 @@
 .connect-link-card-dark {
   background:
     radial-gradient(circle at 100% 0%, rgba(244, 201, 93, .16), transparent 34%),
-    linear-gradient(145deg, var(--wine), var(--wine-deep));
+    linear-gradient(145deg, var(--brand-navy), var(--brand-navy-deep));
   color: white;
 }
 
@@ -501,7 +501,7 @@
   height: 40px;
   border-radius: 12px;
   background: rgba(244, 201, 93, .18);
-  color: var(--wine);
+  color: var(--brand-navy);
   font-weight: 950;
 }
 
@@ -670,4 +670,38 @@
   .connect-guide-item > div {
     padding: 0 18px 20px 18px;
   }
+}
+
+/* Verified institutional role and official faculty profile. */
+.connect-current-role {
+  margin: 5px 0 10px !important;
+  color: color-mix(in srgb, white 82%, transparent) !important;
+  font-weight: 800;
+}
+
+.connect-primary-profile {
+  grid-column: 1 / -1;
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, .24);
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: .82rem;
+  font-weight: 850;
+}
+
+.connect-primary-profile:hover,
+.connect-primary-profile:focus-visible {
+  border-color: var(--gold);
+  color: var(--gold);
+  outline: none;
+}
+
+.connect-primary-profile {
+  position: relative;
+  z-index: 1;
 }

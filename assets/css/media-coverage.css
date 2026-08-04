@@ -43,7 +43,7 @@
   max-width: 650px;
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3rem, 5vw, 4.9rem);
+  font-size: clamp(2.65rem, 4vw, 4.25rem);
   line-height: .95;
   letter-spacing: -.052em;
 }
@@ -450,7 +450,7 @@
 @media (max-width: 620px) {
   .media-page .section { padding-block: 58px; }
   .media-hero { padding: 44px 0 56px; }
-  .media-hero-copy h1 { font-size: clamp(2.65rem, 14vw, 4rem); }
+  .media-hero-copy h1 { font-size: clamp(2.45rem, 12vw, 3.35rem); }
   .media-hero-copy > p:not(.breadcrumb) { font-size: 1rem; }
   .media-hero-collage { grid-template-columns: 1fr; min-height: auto; }
   .media-collage-main { height: 360px; border-radius: 28px; }
@@ -712,7 +712,7 @@
 
 .media-hero-copy h1 {
   max-width: 590px;
-  font-size: clamp(3rem, 4.45vw, 4.55rem);
+  font-size: clamp(2.65rem, 4vw, 4.25rem);
   line-height: .97;
 }
 
@@ -812,7 +812,7 @@
   }
 
   .media-hero-copy h1 {
-    font-size: clamp(2.9rem, 4.35vw, 4.25rem);
+    font-size: clamp(2.65rem, 4vw, 4.25rem);
   }
 }
 
@@ -839,7 +839,7 @@
   }
 
   .media-hero-copy h1 {
-    font-size: clamp(2.6rem, 13vw, 3.75rem);
+    font-size: clamp(2.45rem, 12vw, 3.35rem);
   }
 
   .media-hero-collage {

@@ -39,7 +39,7 @@
   max-width: 700px;
   margin: 18px 0 24px;
   font-family: Georgia, serif;
-  font-size: clamp(3.4rem, 5.7vw, 6.25rem);
+  font-size: clamp(2.65rem, 4vw, 4.25rem);
   line-height: .93;
   letter-spacing: -.055em;
 }
@@ -887,7 +887,7 @@
   }
 
   .talks-hero-copy h1 {
-    font-size: clamp(3rem, 13vw, 5rem);
+    font-size: clamp(2.45rem, 12vw, 3.35rem);
   }
 
   .talks-section-head,

@@ -15,12 +15,17 @@ FULL_PAGES = [
     "connect.html", "leadership.html", "404.html",
 ]
 EXPECTED_NAV = ["Home", "Research", "Talks and Events", "Media Coverage", "Connect"]
+
+CANONICAL_DOMAIN = "https://drahmadcbukhari.com"
+CNAME_VALUE = "drahmadcbukhari.com"
 FORBIDDEN_TEXT = {
     "0000-0002-" + "7237-180X": "incorrect ORCID",
     "PhD in Artificial " + "Intelligence": "incorrect formal degree title",
     "Dr. Bukhari at " + "Microsoft": "unverified image description",
     "--" + "wine": "obsolete color-token name",
     "assets/js/" + "research.js": "obsolete research-only script",
+    "securespace" + "drahmadcbukhari.com": "incorrect domain variant",
+    "Associate Professor of " + "Computer Science": "changing academic title emphasized in portfolio copy",
 }
 
 
@@ -126,6 +131,8 @@ for relative in FULL_PAGES:
     canonical = parser.find("link", rel="canonical")
     if relative != "404.html" and not canonical:
         fail(f"{relative}: missing canonical URL")
+    if canonical and not canonical.get("href", "").startswith(CANONICAL_DOMAIN):
+        fail(f"{relative}: canonical URL does not use {CANONICAL_DOMAIN}")
     if relative == "404.html":
         robots = parser.find("meta", name="robots")
         if not robots or "noindex" not in robots.get("content", ""):
@@ -232,6 +239,13 @@ if "<!-- EVENTS:START -->" not in (ROOT / "talks-events.html").read_text(encodin
     fail("talks-events.html: missing generated archive markers")
 if "<!-- MEDIA:START -->" not in (ROOT / "media-coverage.html").read_text(encoding="utf-8"):
     fail("media-coverage.html: missing generated archive markers")
+
+if (ROOT / "CNAME").read_text(encoding="utf-8").strip() != CNAME_VALUE:
+    fail(f"CNAME must contain exactly {CNAME_VALUE}")
+
+leadership_source = (ROOT / "leadership.html").read_text(encoding="utf-8")
+if "assets/css/leadership.css" not in leadership_source:
+    fail("leadership.html: missing page-specific modern profile stylesheet")
 
 if errors:
     print("Site validation failed:")

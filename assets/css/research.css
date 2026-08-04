@@ -33,7 +33,7 @@ body[data-page="research"] .research-hero-copy h1 {
   margin: 0;
   max-width: 720px;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.15rem, 4.25vw, 4.55rem);
+  font-size: clamp(2.65rem, 4vw, 4.25rem);
   line-height: .94;
   letter-spacing: -.052em;
 }
@@ -380,7 +380,7 @@ body[data-page="research"] .research-publication-card .card-link { margin-top: a
 @media (max-width: 720px) {
   body[data-page="research"] .research-hero { padding: 58px 0 64px; }
   body[data-page="research"] .research-hero-grid { gap: 38px; }
-  body[data-page="research"] .research-hero-copy h1 { font-size: clamp(2.75rem, 13vw, 4.4rem); }
+  body[data-page="research"] .research-hero-copy h1 { font-size: clamp(2.45rem, 12vw, 3.35rem); }
   body[data-page="research"] .research-network-card { border-radius: 25px; }
   body[data-page="research"] .research-network-card figcaption { position: relative; left: auto; right: auto; bottom: auto; margin: -1px 0 0; border: 0; border-radius: 0; background: var(--brand-navy-deep); }
   body[data-page="research"] .research-pillar summary { grid-template-columns: auto 1fr auto; padding: 18px; }
@@ -507,7 +507,7 @@ body[data-page="research"] .research-source-link:hover {
 
 @media (max-width: 720px) {
   body[data-page="research"] .research-hero-copy h1 {
-    font-size: clamp(2.7rem, 13vw, 4rem);
+    font-size: clamp(2.45rem, 12vw, 3.35rem);
   }
 
   body[data-page="research"] .research-pillar-grid {

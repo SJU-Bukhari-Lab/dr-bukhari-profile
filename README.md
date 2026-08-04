@@ -1,47 +1,41 @@
-# Syed Ahmad Chan Bukhari Academic Profile Website
+# Dr. Bukhari Professional Portfolio
 
-A polished, responsive, GitHub Pages-ready static website designed to showcase Dr. Syed Ahmad Chan Bukhari’s academic leadership, research, selected scholarship, commentary, and public resources.
+A static GitHub Pages portfolio for Syed Ahmad Chan Bukhari, PhD. The site preserves the original navy-and-gold visual system while organizing the public profile around research, talks and events, media coverage, and scholarly engagement.
 
-## Design direction
-
-- Visual continuity with the Bukhari Lab website through a burgundy, gold, charcoal, and warm-neutral palette
-- Personal academic profile structure inspired by modern researcher portfolio websites
-- Compact sticky navigation, large editorial typography, modular cards, research-network visuals, and dark mode
-- No date labels are displayed anywhere in the public interface
-
-## Pages
-
-- `index.html` — Academic profile homepage
-- `research.html` — Research pillars and selected active projects
-- `scholarship.html` — Filterable selected-publications portfolio
-- `leadership.html` — Positions, education, teaching, recognition, and mentorship
-- `resources.html` — LinkedIn commentary, YouTube, software, standards, and media
-- `connect.html` — Institutional and scholarly contact channels
-
-## Deployment
-
-This is a dependency-free static site. Push the folder to a GitHub repository and enable GitHub Pages from the repository root.
-
-For a custom domain, add a `CNAME` file containing the domain after the domain has been selected.
-
-## Local preview
+## Preview locally
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open `http://localhost:8000`.
+Open `http://localhost:8000`.
 
-## Content safety choices
+## Event photographs
 
-The site intentionally excludes:
+The homepage gallery is fully styled and currently uses three abstract placeholders:
 
-- personal email address
-- telephone number and office room
-- grant proposals still under review or only planned
-- exact grant amounts and funding periods
-- private operational details
-- individual student names from mentorship records
-- full CV publication and service lists
+- `assets/images/event-conference.svg`
+- `assets/images/event-talk.svg`
+- `assets/images/event-workshop.svg`
 
-The institutional email is used as the only direct contact address.
+Replace these files with optimized `.webp` photographs from the shared Drive folder and update the corresponding paths in `index.html`, or preserve the filenames by exporting the photos under matching names.
+
+Recommended image preparation: 1600px wide, WebP, under 350 KB where practical, meaningful alt text, and written permission for any prominently featured attendees.
+
+## Google Scholar metrics
+
+The browser loads public values from `assets/data/scholar-metrics.json`; no API key is exposed in client-side JavaScript. A monthly GitHub Actions workflow is included in `.github/workflows/update-scholar-metrics.yml`.
+
+To enable automated refreshes, add a repository Actions secret named `SERPAPI_KEY`. Without the secret, the workflow exits safely and retains the repository-managed values. Google Scholar remains the source of record.
+
+## Custom domain
+
+`CNAME` is configured for `drahmadcbukhari.com`. In the DNS provider, point the apex domain to GitHub Pages and configure `www` as a CNAME to `sju-bukhari-lab.github.io`. Then enter `drahmadcbukhari.com` under **Repository Settings → Pages → Custom domain** and enable HTTPS after DNS verification.
+
+## Navigation
+
+Primary navigation:
+
+`Home | Research | Talks and Events | Media Coverage | Connect`
+
+The academic profile remains available through the link beneath the homepage portrait, but it is intentionally excluded from the top menu.

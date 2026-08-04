@@ -1,0 +1,163 @@
+/* Shared interaction and content-maintenance components. */
+
+@view-transition {
+  navigation: auto;
+}
+
+.site-header { view-transition-name: site-header; }
+main { view-transition-name: page-content; }
+.site-footer { view-transition-name: site-footer; }
+
+::view-transition-old(page-content) {
+  animation: page-out 140ms ease both;
+}
+
+::view-transition-new(page-content) {
+  animation: page-in 220ms ease both;
+}
+
+@keyframes page-out {
+  to { opacity: 0; transform: translateY(-4px); }
+}
+
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(8px); }
+}
+
+.content-status-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: .78rem;
+  font-weight: 750;
+}
+
+.content-status-row span,
+.content-status-row a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.content-status-row span::before,
+.content-status-row a::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold-deep);
+}
+
+.content-status-row a {
+  color: var(--brand-navy);
+  text-decoration: none;
+}
+
+[data-theme="dark"] .content-status-row a { color: var(--gold); }
+.content-status-row a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+.project-status-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 10px;
+  padding: 5px 9px;
+  border: 1px solid color-mix(in srgb, var(--gold-deep) 45%, var(--line));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--gold) 14%, var(--surface));
+  color: var(--brand-navy);
+  font-size: .68rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+[data-theme="dark"] .project-status-badge { color: var(--gold); }
+
+.scholar-update-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: .76rem;
+}
+
+.talks-lightbox-nav {
+  position: absolute;
+  z-index: 3;
+  inset: 50% 14px auto;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.talks-lightbox-nav button {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 50%;
+  background: rgba(6, 26, 45, .82);
+  color: white;
+  cursor: pointer;
+  pointer-events: auto;
+  font-size: 1.4rem;
+}
+
+.talks-lightbox-nav button:hover,
+.talks-lightbox-nav button:focus-visible,
+.talks-lightbox-close:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  background: rgba(11, 42, 74, .96);
+}
+
+.talks-lightbox-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px 22px 18px;
+}
+
+.talks-lightbox-meta p { padding: 0; }
+.talks-lightbox-counter { flex: 0 0 auto; color: rgba(255,255,255,.66); font-size: .78rem; font-weight: 800; }
+
+@media (max-width: 1020px) {
+  body.menu-open { overflow: hidden; }
+  body.menu-open::after {
+    content: "";
+    position: fixed;
+    inset: var(--header-h) 0 0;
+    z-index: 89;
+    background: rgba(4, 15, 25, .42);
+    backdrop-filter: blur(2px);
+  }
+  .site-nav { z-index: 90; }
+}
+
+@media (max-width: 560px) {
+  .talks-lightbox-nav { inset-inline: 8px; }
+  .talks-lightbox-nav button { width: 40px; height: 40px; }
+  .talks-lightbox-meta { align-items: flex-start; padding: 12px 16px 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(page-content),
+  ::view-transition-new(page-content) { animation: none; }
+}
+
+/* Review-date rows that sit between section introductions and interactive content. */
+.talks-section-head + .content-status-row,
+.media-archive-intro + .content-status-row,
+.media-section-head + .content-status-row {
+  margin-top: -20px;
+  margin-bottom: 28px;
+}
+
+.page-hero .content-status-row {
+  margin-top: 22px;
+}

@@ -1,0 +1,83 @@
+{
+  "updated_at": "2026-08-03",
+  "events": [
+    {
+      "id": "trust-as-the-currency-of-ai-in-health",
+      "year": "2025",
+      "format": "keynote",
+      "type": "Keynote",
+      "title": "Trust as the Currency of AI in Health",
+      "venue": "IEEE HealthCom Workshop · Khalifa University, Abu Dhabi",
+      "summary": "A keynote on explainable, equitable, and human-centered AI for health.",
+      "details": "Delivered during the IEEE HealthCom 2025 Workshop on AI-Driven Innovations in e-Health on October 21, 2025.",
+      "source_url": "https://www.linkedin.com/posts/drahmadbukhari_ieeehealthcom-aiinhealthcare-trustworthyai-activity-7386442346067927040-SM3e",
+      "source_label": "Verified event post",
+      "search": "2025 keynote ieee healthcom khalifa university abu dhabi trust currency ai health trustworthy fairness human centered"
+    },
+    {
+      "id": "predicting-health-outcomes-using-machine-learning-to-improve-clinical-care",
+      "year": "2022",
+      "format": "keynote",
+      "type": "Invited seminar",
+      "title": "Predicting Health Outcomes Using Machine Learning to Improve Clinical Care",
+      "venue": "Knight Foundation School of Computing and Information Sciences · Florida International University",
+      "summary": "Machine-learning approaches for hospital readmission and mortality prediction using electronic health records.",
+      "details": "The seminar discussed 30-day all-cause hospital readmission and mortality prediction for paralytic ileus and trauma patients.",
+      "source_url": "https://www.stjohns.edu/news-media/announcements/dr-bukhari-was-invited-florida-international-university-speak-kifcks-seminar-series",
+      "source_label": "St. John’s announcement",
+      "search": "2022 invited seminar florida international university fiu kfscis predicting health outcomes machine learning clinical care ehr hospital readmission mortality"
+    },
+    {
+      "id": "socio-technical-approaches-to-reduce-the-digital-divide",
+      "year": "2022",
+      "format": "keynote",
+      "type": "Invited conference talk",
+      "title": "Socio-Technical Approaches to Reduce the Digital Divide",
+      "venue": "Data-Driven Science and AI Conference · Florida Atlantic University",
+      "summary": "A presentation on biomedical content authoring, semantic enrichment, and improving access to online biomedical information.",
+      "details": "Presented on May 11, 2022 to an audience of students, scientists, and industry participants.",
+      "source_url": "https://www.stjohns.edu/news-media/announcements/dr-bukhari-was-invited-speaker-data-driven-science-and-ai-conference-held-florida-atlantic",
+      "source_label": "St. John’s announcement",
+      "search": "2022 invited speaker data driven science artificial intelligence conference florida atlantic university fau socio technical digital divide biomedical content authoring publishing semantic enrichment information retrieval"
+    },
+    {
+      "id": "explainable-clinical-decision-support-at-biostec",
+      "year": "2023",
+      "format": "conference",
+      "type": "Conference presentations",
+      "title": "Explainable Clinical Decision Support at BIOSTEC",
+      "venue": "BIOSTEC · Lisbon, Portugal",
+      "summary": "Three papers and a poster on explainability, healthcare NLP, readmission prediction, and trustworthy medical coding.",
+      "details": "Presented work included NLP-enhanced comorbidity risk scoring for hospital readmission prediction, attention-based explainability in healthcare NLP, and knowledge graph-based trustworthy medical code recommendations.",
+      "source_url": "https://www.stjohns.edu/news-media/announcements/st-johns-university-presents-innovative-methods-improve-clinical-decision-support-systems-biostec",
+      "source_label": "St. John’s conference report",
+      "search": "2023 biostec lisbon portugal explainable clinical decision support healthcare natural language processing medical code recommendations poster"
+    },
+    {
+      "id": "biomedical-semantic-content-editing-at-flairs-35",
+      "year": "2022",
+      "format": "conference",
+      "type": "Conference presentation",
+      "title": "Biomedical Semantic Content Editing at FLAIRS-35",
+      "venue": "35th International FLAIRS Conference · Jensen Beach, Florida",
+      "summary": "Bukhari Lab presented NSF-supported work on socio-technical biomedical content authoring and semantic enrichment.",
+      "details": "The lab participated in the May 15–18, 2022 conference with two accepted papers on biomedical semantic content editing.",
+      "source_url": "https://www.stjohns.edu/news-media/announcements/bukhari-lab-participated-flairs-35-florida-their-socio-technical-approach-reducing-digital-divide",
+      "source_label": "St. John’s conference report",
+      "search": "2022 flairs 35 florida biomedical semantic content editing socio technical content authoring structured publishing"
+    },
+    {
+      "id": "the-future-is-now-ai-digitalization-and-healthcare-innovation",
+      "year": "2024",
+      "format": "workshop",
+      "type": "Industry panel",
+      "title": "The Future Is Now: AI, Digitalization, and Healthcare Innovation",
+      "venue": "St. John’s University Manhattan Campus · In collaboration with HIMSS",
+      "summary": "A public discussion on how artificial intelligence, digitalization, and technology are reshaping healthcare.",
+      "details": "The December 5, 2024 panel brought together leaders from technology, healthcare, and higher education.",
+      "source_url": "https://www.stjohns.edu/academics/programs/healthcare-informatics-master-science",
+      "source_label": "St. John’s program feature",
+      "search": "2024 panel future is now ai digitalization healthcare innovation st johns manhattan himss"
+    }
+  ]
+}
